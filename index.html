@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se7aFit - Nutrition for Athletes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Se7aFit</div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html" class="auth-button">Login</a></li>
+        <li><a href="signup.html" class="auth-button primary">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Transform Your Body With Proper Nutrition</h1>
+          <p>Personalized meal plans and expert guidance to help you reach your fitness goals</p>
+          <div class="hero-buttons">
+            <button class="primary-button">Get Started</button>
+            <a href="learn-more.html" class="secondary-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="macro-calculator">
+      <div class="container">
+        <h2>Macro Calculator</h2>
+        <div class="calculator-container">
+          <form id="macroForm" class="calculator-form">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" min="15" max="80" required>
+            </div>
+            <div class="form-group">
+              <label for="weight">Weight (kg)</label>
+              <input type="number" id="weight" min="40" max="200" required>
+            </div>
+            <div class="form-group">
+              <label for="height">Height (cm)</label>
+              <input type="number" id="height" min="140" max="220" required>
+            </div>
+            <div class="form-group">
+              <label for="activity">Activity Level</label>
+              <select id="activity" required>
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Light Activity</option>
+                <option value="1.55">Moderate Activity</option>
+                <option value="1.725">Very Active</option>
+                <option value="1.9">Extra Active</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="goal">Goal</label>
+              <select id="goal" required>
+                <option value="lose">Lose Weight</option>
+                <option value="maintain">Maintain Weight</option>
+                <option value="gain">Gain Weight</option>
+              </select>
+            </div>
+            <button type="submit" class="primary-button">Calculate</button>
+          </form>
+          <div id="results" class="calculator-results hidden">
+            <h3>Your Daily Macros</h3>
+            <div class="macro-grid">
+              <div class="macro-box">
+                <span class="macro-label">Calories</span>
+                <span id="calories" class="macro-value">0</span>
+              </div>
+              <div class="macro-box">
+                <span class="macro-label">Protein</span>
+                <span id="protein" class="macro-value">0g</span>
+              </div>
+              <div class="macro-box">
+                <span class="macro-label">Carbs</span>
+                <span id="carbs" class="macro-value">0g</span>
+              </div>
+              <div class="macro-box">
+                <span class="macro-label">Fat</span>
+                <span id="fat" class="macro-value">0g</span>
+              </div>
+            </div>
+            <button id="recalculate" class="secondary-button">Recalculate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="nutrition-plans">
+      <div class="container">
+        <h2>Nutrition Plans</h2>
+        <div class="plans-grid">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Basic</h3>
+              <p class="price">Free</p>
+            </div>
+            <ul class="plan-features">
+              <li>Basic macro calculations</li>
+              <li>Simple meal suggestions</li>
+              <li>Weekly newsletter</li>
+              <li>Community support</li>
+            </ul>
+            <button class="primary-button"><a href="basic-plan.html">Start Free</a></button>
+          </div>
+          <div class="plan-card featured">
+            <div class="plan-header">
+              <span class="featured-tag">Most Popular</span>
+              <h3>Premium</h3>
+              <p class="price">$29<span>/month</span></p>
+            </div>
+            <ul class="plan-features">
+              <li>Custom meal plans</li>
+              <li>Advanced macro tracking</li>
+              <li>Recipe database access</li>
+              <li>Shopping lists</li>
+              <li>Email support</li>
+            </ul>
+            <a href="pro-plan.html">Get Started</a>
+          </div>
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Pro</h3>
+              <p class="price">$49<span>/month</span></p>
+            </div>
+            <ul class="plan-features">
+              <li>All Premium features</li>
+              <li>1-on-1 coaching</li>
+              <li>Personalized workout plans</li>
+              <li>24/7 support</li>
+              <li>Progress tracking</li>
+            </ul>
+            <a href="premium-plan.html">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="primary-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Se7aFit</h4>
+          <p>Your partner in achieving optimal nutrition and fitness goals.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: Se7aFit@gmail.com</p>
+          <p>Phone: +212 678503878</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Se7aFit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

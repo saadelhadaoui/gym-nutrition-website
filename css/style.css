@@ -100,7 +100,7 @@ body {
 .learn-more-hero {
   padding: 160px 0 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('pexels-photo-1640770.jpeg') center/cover;
+              url('../img/pexels-photo-1640770.jpeg') center/cover;
   color: var(--white);
   text-align: center;
 }
@@ -200,7 +200,7 @@ body {
 .about-hero {
   padding: 160px 0 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('pexels-photo-841130.jpeg') center/cover;
+              url('../img/pexels-photo-841130.jpeg') center/cover;
   color: var(--white);
   text-align: center;
 }
@@ -320,7 +320,7 @@ body {
 .plan-hero {
   padding: 160px 0 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('pexels-photo-1552242.webp') center/cover;
+              url('../img/pexels-photo-1552242.webp') center/cover;
   color: var(--white);
   text-align: center;
   position: relative;
@@ -328,12 +328,12 @@ body {
 
 .plan-hero.premium {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('pexels-photo-841130.jpeg') center/cover;
+              url('../img/pexels-photo-841130.jpeg') center/cover;
 }
 
 .plan-hero.pro {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('pexels-photo-136405.webp') center/cover;
+              url('../img/pexels-photo-136405.webp') center/cover;
 }
 
 .featured-badge {
@@ -451,7 +451,7 @@ body {
   justify-content: center;
   padding: 100px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url('pexels-photo-1552242.webp') center/cover;
+              url('../img/pexels-photo-1552242.webp') center/cover;
 }
 
 .auth-container {
@@ -513,7 +513,7 @@ body {
 .hero {
   padding: 120px 0 80px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url('pexels-photo-1552242.webp') center/cover;
+              url('../img/pexels-photo-1552242.webp') center/cover;
   color: var(--white);
 }
 
